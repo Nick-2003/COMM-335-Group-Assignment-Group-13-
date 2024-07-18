@@ -1,0 +1,43 @@
+INSTRUCTIONS:
+* Provide 3 Multiple Choice Questions based on your Tech Talk
+* Follow the given example, just REPLACE the Question and Answers below (1 to 3)
+* Do not change the format of this text file
+* Do not include All or None as the answer
+* Answers order will be randomized
+* Mark the correct answer with asterix *
+
+
+EXAMPLE:
+4) Who determined the exact speed of light?
+a. Albert Einstein
+*b. Albert Michelson
+c. Thomas Edison
+d. Guglielmo Marconi
+e. Nikola Tesla
+
+
+
+1) Question?
+*a. Correct Answer
+b. Answer
+c. Answer
+d. Answer
+e. Answer
+
+
+2) Question?
+a. Answer
+b. Answer
+c. Answer
+d. Answer
+*e. Correct Answer
+
+
+3) Question?
+a. Answer
+b. Answer
+*c. Correct Answer
+d. Answer
+e. Answer
+
+

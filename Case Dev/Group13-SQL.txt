@@ -1,0 +1,90 @@
+﻿CREATE TABLE User
+(
+  Name VARCHAR(100) NOT NULL,
+  Language_ 100 NOT NULL,
+  Email VARCHAR(400) NOT NULL,
+  Phone_No. VARCHAR(20) NOT NULL,
+  PRIMARY KEY (Email, Phone_No.)
+);
+
+
+CREATE TABLE Restaurant
+(
+  Restaurant_ID VARCHAR(10) NOT NULL,
+  PRIMARY KEY (Restaurant_ID)
+);
+
+
+CREATE TABLE Menu_Item
+(
+  Item_ID VARCHAR(10) NOT NULL,
+  Restaurant_ID VARCHAR(10) NOT NULL,
+  PRIMARY KEY (Item_ID),
+  FOREIGN KEY (Restaurant_ID) REFERENCES Restaurant(Restaurant_ID)
+);
+
+
+CREATE TABLE User_Address
+(
+  Address VARCHAR(200) NOT NULL,
+  Email VARCHAR(400) NOT NULL,
+  Phone_No. VARCHAR(20) NOT NULL,
+  PRIMARY KEY (Address, Email, Phone_No.),
+  FOREIGN KEY (Email, Phone_No.) REFERENCES User(Email, Phone_No.)
+);
+
+
+CREATE TABLE Order
+(
+  Delivery_Option 30 NOT NULL,
+  Promotion_Code VARCHAR(15),
+  Delivery_Date DATE,
+  Delivery_Address VARCHAR(200) NOT NULL,
+  Delivery_Time 7,
+  Order_ID VARCHAR(10) NOT NULL,
+  Email VARCHAR(400) NOT NULL,
+  Phone_No. VARCHAR(20) NOT NULL,
+  Restaurant_ID VARCHAR(10) NOT NULL,
+  PRIMARY KEY (Order_ID),
+  FOREIGN KEY (Email, Phone_No.) REFERENCES User(Email, Phone_No.),
+  FOREIGN KEY (Restaurant_ID) REFERENCES Restaurant(Restaurant_ID)
+);
+
+
+CREATE TABLE Bill
+(
+  Bill_Status 100 NOT NULL,
+  Menu_Cost NUMERIC(10, 2) NOT NULL,
+  Delivery_Fee NUMERIC(10, 2) NOT NULL,
+  Service_Fee NUMERIC(10, 2) NOT NULL,
+  Other_Fees NUMERIC(10, 2) NOT NULL,
+  Bill_No. INT NOT NULL,
+  Order_ID VARCHAR(10) NOT NULL,
+  PRIMARY KEY (Bill_No.),
+  FOREIGN KEY (Order_ID) REFERENCES Order(Order_ID)
+);
+
+
+CREATE TABLE Order_Item
+(
+  Requests VARCHAR(1000),
+  Order_ID VARCHAR(10) NOT NULL,
+  Item_ID VARCHAR(10) NOT NULL,
+  PRIMARY KEY (Order_ID, Item_ID),
+  FOREIGN KEY (Order_ID) REFERENCES Order(Order_ID),
+  FOREIGN KEY (Item_ID) REFERENCES Menu_Item(Item_ID)
+);
+
+
+CREATE TABLE Payment
+(
+  Payment_No. INT NOT NULL,
+  Pay_Amount NUMERIC(10, 2) NOT NULL,
+  Pay_Date DATE NOT NULL,
+  Email VARCHAR(400) NOT NULL,
+  Phone_No. VARCHAR(20) NOT NULL,
+  Bill_No. INT NOT NULL,
+  PRIMARY KEY (Payment_No.),
+  FOREIGN KEY (Email, Phone_No.) REFERENCES User(Email, Phone_No.),
+  FOREIGN KEY (Bill_No.) REFERENCES Bill(Bill_No.)
+);

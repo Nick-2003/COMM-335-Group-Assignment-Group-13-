@@ -1,0 +1,50 @@
+﻿INSTRUCTIONS:
+* Provide 3 Multiple Choice Questions based on your Tech Talk
+* Follow the given example, just REPLACE the Question and Answers below (1 to 3)
+* Do not change the format of this text file
+* Do not include All or None as the answer
+* Answers order will be randomized
+* Mark the correct answer with asterix *
+
+
+
+
+EXAMPLE:
+4) Who determined the exact speed of light?
+a. Albert Einstein
+*b. Albert Michelson
+c. Thomas Edison
+d. Guglielmo Marconi
+e. Nikola Tesla
+
+
+
+
+
+
+1) What are the benefits to the automation of jobs?
+*a. Improved productivity
+b. Reduce need for critical thinking
+c. Completely ethical 
+d. Guaranteed unbiased data
+e. Easy to identify agents responsible for errors 
+
+
+
+
+2) What approach to machine learning involves labeled datasets?
+a. Supervised and semi-supervised
+b. Unsupervised
+c. Supervised
+*d. Unsupervised and semi-supervised 
+e. Semi-supervised 
+
+
+
+
+3) How can AI streamline data analysis in marketing and sales?
+a. Decoding of unstructured data
+b. Complex problem solving without human involvement
+c. Predictive forecasting of market trends
+d. Decoding of unstructured data and complex problem solving without human involvement
+*e. Predictive forecasting of market trends and decoding of unstructured data
